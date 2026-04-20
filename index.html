@@ -10,7 +10,7 @@
 <body>
     <section>
         <nav>
-            <img src="./assets/FES.svg" alt="">
+            <img src="./assets/FES.svg" class="logo" alt="">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#discord">Discord</a></li>
@@ -18,57 +18,69 @@
             </ul>
         </nav>
         <header>
-            <div>
+           <div class="row"> 
+            <div class="home__description">
                 <h1>Best place to learn frontend</h1>
-                <p>Go from being an absolute beginner to pro with a simplified process</p>
-                <button>Start Now</button>
+                <p class="subheader">Go from being an absolute beginner to pro with a simplified process</p>
+                <button class="home__description--button">Start Now</button>
             </div>
             <figure>
-                <img src="./assets/about.jpg" alt="Home page image">
+                <img src="./assets/laptop.png" alt="Home page image">
             </figure>
+            </div>
         </header>
     </section>
 
     <main>
         <section id="about">
             <h2>About</h2>
-            <div>
-                <p>oogie bogie kowabunga!</p>
-                <p>oogie bogie kowabunga!</p>
-            </div>
-            <figure>
+            <div class="row">
+            <div class="section__description">
+                <div class="section__description--wrapper">
+                    <p class ="section__description--para">oogie bogie kowabunga!</p>
+                    <p class ="section__description--para">oogie bogie kowabunga!</p>
+                </div>
+            <figure class="about__img--wrapper">
                 <img src="./assets/about.jpg" alt="About Image">
             </figure>
+            </div>
+            </div>
         </section>
+
         <section id="discord">
             <h2>Discord</h2>
-            <figure>
+            <div class="row">
+            <div class="section__description">   
+            <figure class="about__img--wrapper">
                 <img src="./assets/discord.png" alt="Discord Image">
             </figure>
-            <div>
-                <p>oogie boogie kowabunga! Join our Discord server to connect with other learners and get help!</p>
-                <p>oogie boogie kowabunga</p>
+            <div class="section__description--wrapper">
+                <p class ="section__description--para">oogie boogie kowabunga! Join our Discord server to connect with other learners and get help!</p>
+                <p class ="section__description--para">oogie boogie kowabunga</p>
+            </div>
+            </div>
             </div>
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
             <form action="">
-                <label for="E-mail"></label>
-                <input type="text" placeholder=""janedoe@example.com>
-                <label for="Message"></label>
-                <textarea type="text" placeholder="janedoe@example.com"></textarea>
+                <label for="E-mail">E-mail</label>
+                <input type="email" placeholder="janedoe@example.com">
+                <label for="Message">Message</label>
+                <textarea type="text" placeholder="Your message here..."></textarea>
+                <button>Contact Us</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <img src="./assets/FES.svg" alt=""> 
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
-            <a href="">Courses</a>
+        <img class="footer__logo" src="./assets/FES.svg" alt=""> 
+        <div class="footer__links">
+            <a class="footer__link" href="#about">About</a>
+            <a class="footer__link" href="#discord">Discord</a>
+            <a class="footer__link" href="#contact">Contact</a>
+            <a class="footer__link" href="">Courses</a>
         </div>
         <p>Copyright frontend simplified</p>
     </footer>
